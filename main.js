@@ -13,7 +13,7 @@ const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/scraperData"
 
 console.log("MONGODB_URI", MONGODB_URI);
 
-mongoose.Promise = Promise;
+// mongoose.Promise = Promise;
 
 mongoose.connect(MONGODB_URI, { 
     useNewUrlParser: true, 
@@ -21,13 +21,13 @@ mongoose.connect(MONGODB_URI, {
     // useCreateIndex: true
   });
 
-(async () => {
-    const client = new MongoClient(process.env["MONGODB_URI"], { useUnifiedTopology: true });
-    try {
-        await client.connect();
-        const collection = client.db("hacker-news").collection("mentions");
-        console.log("FINISHED");
-    } catch(error) {
-        console.log(error);
-    }
-})();
+// (async () => {
+//     const client = new MongoClient(process.env["MONGODB_URI"], { useUnifiedTopology: true });
+//     try {
+//         await client.connect();
+//         const collection = client.db("hacker-news").collection("mentions");
+//         console.log("FINISHED");
+//     } catch(error) {
+//         console.log(error);
+//     }
+// })();
