@@ -1,0 +1,30 @@
+{
+  "name": "mongodb-hacker-news",
+  "version": "1.0.0",
+  "description": "https://www.mongodb.com/developer/how-to/capturing-hacker-news-mentions-nodejs-mongodb/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coding-to-music/mongodb-hacker-news.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coding-to-music/mongodb-hacker-news/issues"
+  },
+  "homepage": "https://github.com/coding-to-music/mongodb-hacker-news#readme",
+  "dependencies": {
+    "dotenv": "^14.2.0",
+    "mongodb": "^4.3.0",
+    "mongoose": "^6.1.7",
+    "ndjson": "^2.0.0",
+    "request": "^2.88.2",
+    "sentiment": "^5.0.2",
+    "through2": "^4.0.2",
+    "through2-filter": "^3.0.0"
+  }
+}
