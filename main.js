@@ -29,9 +29,9 @@ console.time(timetaken);
       await pipeline(
           request("http://api.hnstream.com/comments/stream/"),
           ndjson.parse({ strict: false }),
-          // filter({ objectMode: true }, chunk => {
-          //     return chunk["body"].toLowerCase().includes("bitcoin") || chunk["article-title"].toLowerCase().includes("bitcoin");
-          // }),
+        //   filter({ objectMode: true }, chunk => {
+        //       return chunk["body"].toLowerCase().includes("bitcoin") || chunk["article-title"].toLowerCase().includes("bitcoin");
+        //   }),
           through2.obj((row, enc, next) => {
               let result = textRank.analyze(row.body);
               console.log("result.score", result.score);
@@ -39,6 +39,10 @@ console.time(timetaken);
               next(null, row);
           }),
           through2.obj((row, enc, next) => {
+            row.lastModified = new Date();
+            next(null, row);
+        }),
+        through2.obj((row, enc, next) => {
             console.log("insertOne");
             collection.insertOne({
                   ...row,
