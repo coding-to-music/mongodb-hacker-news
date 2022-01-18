@@ -6,6 +6,25 @@ https://github.com/coding-to-music/mongodb-hacker-news
 
 http://hnstream.com/
 
+```java
+Unofficial Hacker News Streaming API
+uses HN's firebase API as the data source. endpoints below are powered by fanout.io.
+contact: justin
+Between this and HNSearch, maybe your programs don't have to hit HN itself too much.
+
+All articles start: GET http://api.hnstream.com/news/items/
+All articles next: GET http://api.hnstream.com/news/items/?since=cursor:{last_cursor}
+All articles stream: GET http://api.hnstream.com/news/stream/
+All comments start: GET http://api.hnstream.com/comments/items/
+All comments next: GET http://api.hnstream.com/comments/items/?since=cursor:{last_cursor}
+All comments stream: GET http://api.hnstream.com/comments/stream/
+Per-article comments start: GET http://api.hnstream.com/news/{article-id}/comments/items/
+Per-article comments next: GET http://api.hnstream.com/news/{article-id}/comments/items/?since=cursor:{last_cursor}
+Per-article comments stream: GET http://api.hnstream.com/news/{article-id}/comments/stream/
+
+The "all comments" API is being used below, to display the latest comments as they are posted.
+```
+
 ## Bug I am having
 
 No data seems to come back from the call to the stream API or even via Postman
