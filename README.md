@@ -4,7 +4,10 @@ https://www.mongodb.com/developer/how-to/capturing-hacker-news-mentions-nodejs-m
 
 https://github.com/coding-to-music/mongodb-hacker-news
 
+https://www.mongodb.com/community/forums/t/doing-hacker-news-stream-from-api-but-not-getting-data-back/142406
+
 http://hnstream.com/
+
 
 ```java
 Unofficial Hacker News Streaming API
