@@ -6,6 +6,26 @@ https://github.com/coding-to-music/mongodb-hacker-news
 
 http://hnstream.com/
 
+## Bug I am having
+
+No data seems to come back from the call to the stream API or even via Postman
+
+```java
+Time taken by addCount function: 5:40.278 (m:ss.mmm)
+FINISHED
+```
+
+When I call 
+
+```java
+http://api.hnstream.com/comments/stream/
+```
+
+Or GET via postman
+
+![image](https://user-images.githubusercontent.com/3156358/149875298-9bcb4e8a-ce97-441d-8a65-015cca67cccd.png)
+
+
 If you're in the technology space, you've probably stumbled upon Hacker News at some point or another. Maybe you're interested in knowing what's popular this week for technology or maybe you have something to share. It's a platform for information.
 
 The problem is that you're going to find too much information on Hacker News without a particularly easy way to filter through it to find the topics that you're interested in. Let's say, for example, you want to know information about Bitcoin as soon as it is shared. How would you do that on the Hacker News website?
