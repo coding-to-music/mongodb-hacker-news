@@ -44,6 +44,7 @@ Or GET via postman
 
 ![image](https://user-images.githubusercontent.com/3156358/149875298-9bcb4e8a-ce97-441d-8a65-015cca67cccd.png)
 
+## Introduction
 
 If you're in the technology space, you've probably stumbled upon Hacker News at some point or another. Maybe you're interested in knowing what's popular this week for technology or maybe you have something to share. It's a platform for information.
 
